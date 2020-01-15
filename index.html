@@ -16,33 +16,107 @@
 		body { margin: 0 ; box-sizing: border-box; }
 
 /* First section */
+    nav  {
+      display: grid;
+      max-width: 1600px;
+      margin: 0 auto;
+      grid-template-columns: repeat(2, 1fr);
+      background: white;
+    /*	max-width: 1000px;
+      margin: 0 auto; /* there is no float center */
+    }
+    nav>div:nth-child(2) {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin: 0; padding: 0;
+      background: blue;
+    }
+    nav>div:nth-child(2) div {
+      display: flex;
+      margin-left: auto;
+      width:50%;
+      flex-direction: row;
+      justify-content: start;
+      background: red;
+    }
+
+    .flex {
+      grid-column: 1 / 9;
+      display: flex;
+      align-items: stretch;
+    }
+    .flex * {
+      flex: 1;
+      background: pink;
+    }
+
+    .contact div { color: white; text-align: center; background: purple; }
+    nav div { background: grey; padding: 1rem; }
+
 		section, footer  {
 			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-			align-content: space-around;
-			justify-content: space-between;
-			grid-gap: 10px;
-			margin: 5vh 0;
+			grid-gap: 2rem;
+			margin: 1rem 0;
 		/*	max-width: 1000px;
 			margin: 0 auto; /* there is no float center */
 		}
-		section:nth-child(2) {
-			grid-template-columns: 1fr 1fr 1fr;
-			grid-template-rows: 200px 200px;
-			grid-auto-rows: 200px;
+
+    .onecolumn {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      align-content: space-around;
+      justify-content: space-between;
+    }
+		section.leadtext {
+			grid-template-columns: 1fr 1fr;
+			grid-auto-rows: minmax(200px, auto)
 		}
+
+    section.redistrictingnow {
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(auto-fit, minmax(6rem, 1fr));
+    }
+
+    .fullwidth {
+      grid-column: 1 / 9;
+      align-self: center;
+      background: blue;
+    }
+
+    section.redistrictingnow h2 {
+      grid-column: 1 / 5;
+      align-self: center;
+      background: blue;
+    }
+
+    .leadintro {
+      grid-column: 2 / 7;
+    }
+    .rightsupport {
+      grid-column: 7 / 9;
+    }
+
+    section.dunno {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 200px;
+      justify-items: center; /* centers children within. width of child hugs content */
+      align-items: center;
+      align-content: center;
+    }
+
+    section>* { padding: 1rem; }
+
 		footer { grid-template-columns: 1fr 200px 200px 1fr;
 			grid-template-rows: 1fr 20px;
 		background: grey; }
 
 		.stripe {
 				grid-column: 2 / 3;
-        grid-row: 1 / 3;
+        grid-row: 1 / 4;
 				background: blue;
 		}
 
 		div {  background: green; }
-
 
     </style>
 
@@ -52,26 +126,159 @@
 
   <body>
 
-    <section>
-      <div><img src="../img/record.svg"></div>
-      <div><img src="../img/record.svg"></div>
-      <div><img src="../img/record.svg"></div>
-      <div><img src="../img/record.svg"></div>
-    </section>
+    <header>
+      <nav>
+        <div>RedrawRI is a campaign to reform how legislative districts are drawn in Rhode Island. Coalition partners include Common Cause Rhode Island, League of Women Voters of Rhode Island, NAACP Providence Branch, and others to be announced soon. Endorsers include Secretary of State Nellie Gorbea.</div>
+        <div>
+          <div>Menu
+            <ul>
+              <li>First</li>
+              <li>Second</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-    <section>
-      <div></div>
-      <div class="stripe"></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </section>
+    <main>
+      <section class="onecolumn">
+        <div><img src="img/record.svg"></div>
+      </section>
 
-  <footer>
+      <section class="leadtext">
+        <div>
+          <p>When those in power draw districts, they do so to favor themselves and their political allies.</p>
+
+          <p>At least 9 states now use an independent redistricting commission to draw state or federal maps.</p>
+        </div>
+        <div>
+          <p>We are proposing Rhode Island create an independent commission to draw our federal and state congressional districts.
+          </p>
+          <p>Read our proposal</p>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div>Contact your legislator to get the commission on the ballot ></div>
+      </section>
+
+      <section class="redistrictingnow">
+        <h2 class="balance-text">How redistricting works now</h2>
+        <div class="leadintro">
+          <p>Since 2001 Rhode Island has redistricted using a hybrid commission created by the General Assembly. In 2011 that eighteen (18) member commission included twelve (12) legislators, eight (8) from the Democratic Party and four (4) from the Republican Party. The remaining six (6) members of the commission were drawn from the public, but included a registered lobbyist, and two Democratic Party officials. That commission produced maps (with technical assistance from a consultant hired and paid by the General Assembly) that were then submitted to the General Assembly for adoption.</p>
+        </div>
+        <div class="rightsupport">
+            <h3>The problem (Gerrymandering)</h3>
+            <p>Social scientists have produced numerous measures to quantify partisan gerrymandering. The leading measure is known as the “efficiency gap.” It is a measure of number of “wasted votes” that are cast for candidates who did not win, or in excess of the number needed to win for the winning candidate. An analysis by Nicholas Stephanopolis and Eric McGee found that using the efficiency gap, Rhode Island’s 2012 House of Representative plan is the most partisan gerrymandered in the United States.</p>
+        </div>
+        <div class="fullwidth">
+          <h3>Ways it has gone wrong in Rhode Island</h3>
+          <h4>District issues</h4>
+          <ul class="flex">
+              <li>
+                  <img src="img/record.svg">
+                  <h5>Not Compact</h5>
+                  <p>Definition of not compact goes here and here</p>
+              </li>
+              <li>
+                  <img src="img/record.svg">
+                  <h5>Breaks communities</h5>
+                  <p>Definition of Breaks communities goes here and here</p>
+              </li>
+              <li>
+                  <img src="img/record.svg">
+                  <h5>Favoring incumbents</h5>
+                  <p>Definition of Favoring incumbents goes here and here</p>
+              </li>
+              <li>
+                  <img src="img/record.svg">
+                  <h5>Equal population</h5>
+                  <p>Definition of Equal population goes here and here</p>
+              </li>
+          </ul>
+            <ul class="flex">
+                <li>
+                  <h4>Rocco’s Robots</h4>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/72499233?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                    <p>In 1981 Senate Majority Leader Rocco Quattrocchi (D-Providence) sought to punish both Republican stalwart Lila Sapinsley (R-Providence) and fellow Democratic “maverick” Senator Richard Licht (D-Providence) by combining their East Side districts. Bucking his party Licht joined Sapinsley in suing to overturn the new districts. When the three-judge panel of the federal court ruled to overturn the maps they wrote, “The only plausible explanation [for the maps are] to preserve the senatorial seats of incumbents favorable to the Democratic leadership and punish incumbents critical of the leadership.”</p>
+                </li>
+                <li>
+                  <h4>Down the middle of the street</h4>
+                    <img src="img/record.svg">
+                    <p>Senator Paul Kelly (D-North Smithfield) was the Majority Leader, the most important position in the state Senate. But just a year after losing that position he found himself on the wrong end of a political gerrymander. His old district contained all of his home community of North Smithfield and part of Woonsocket. Because of gerrymandering he was left with just one-tenth of his former district. The new lines split North Smithfield in half, with the border literally down the middle of the street in front of his house. </p>
+                </li>
+              </ul>
+        </div>
+      </section>
+
+
+
+      <section class="redistrictingnow">
+        <h2>We propose an independent commission</h2>
+        <div class="leadintro">
+            <p>Our proposal puts a constitutional amendment on the ballot in November 2020. Should voters approve that amendment it would create an independent redistricting commission (IRC) beginning in 2021. That IRC would be given sole authority to draw new maps for Rhode Island’s two congressional districts (should we retain both) as well as the General Assembly.</p>
+        </div>
+        <div class="rightsupport">
+          <h3>The Commission…</h3>
+          <p>The Commission would use the following criteria:
+            The U.S. Constitution
+            Equal population
+            The Voting Rights Act
+            Geographic contiguity
+            Partisan fairness
+            Communities of interest
+            Compactness
+            Not favoring or discriminating against incumbents
+          </p>
+        </div>
+        <div class="fullwidth">
+            <p>text</p>
+            <ul class="flex">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+            <p>text</p>
+        </div>
+      </section>
+
+
+      <section class="redistrictingnow">
+        <h2 class="balance-text">Redistricting timeline</h2>
+        <div class="fullwidth">
+        <p>  April 1, 2020 -- Census Day
+  July 31, 2020 -- Census enumeration concludes
+  November 3, 2020 -- Independent Redistricting Commission proposal on the ballot
+  December 31, 2020 -- U.S. Census Bureau delivers population estimates the the President -- Rhode Island finds out whether we retain two congressional districts
+  January 1, 2021 -- Independent Redistricting Commission amendment take effect
+  January - February 2021 -- General Assembly passes enabling statute for redistricting commission
+  March 2021 -- U.S. Census Bureau sends P.L. 94-171 to the states
+  May 1, 2021 -- Deadline for appointments to Independent Redistricting Commission
+  January 1, 2022 -- Deadline for Independent Redistricting Commission to adopt final plans
+  June 2022 -- Filing deadline for office based on new maps
+  September 2022 -- First primary elections based on new maps
+  November 2022 -- First general election based on new maps
+        </p>
+      </div>
+      </section>
+
+      <section class="dunno">
+        <div>1
+        </div>
+        <div>2</div>
+        <div>3</div>
+        <div>4 ; ljkans f;lasdnfsad ;ln;lasdfksd;falsdknf as;daknsdfl f asdsdsdfsfsa asdsdf</div>
+      </section>
+
+    </main>
+    <footer>
       <div class="stripe">Stripe is here and what happens if there is a bunch of content. </div>
     </footer>
 
+    <script src="balancetext.min.js"></script>
+    <script>
+      balanceText();
+    </script>
 
   </body>
 
