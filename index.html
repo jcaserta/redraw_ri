@@ -25,20 +25,17 @@
     /*	max-width: 1000px;
       margin: 0 auto; /* there is no float center */
     }
-    nav>div:nth-child(2) {
+    nav {
       display: flex;
       flex-direction: row;
       align-items: flex-start;
       margin: 0; padding: 0;
-      background: blue;
     }
-    nav>div:nth-child(2) div {
-      display: flex;
+    nav>div:nth-child(1)  {
+      width: 50%;
+    }
+    nav>div:nth-child(2)  {
       margin-left: auto;
-      width:50%;
-      flex-direction: row;
-      justify-content: start;
-      background: red;
     }
 
     .flex {
@@ -48,14 +45,16 @@
     }
     .flex * {
       flex: 1;
-      background: pink;
     }
 
-    .contact div { color: white; text-align: center; background: purple; }
+    .contact {  background: purple; }
+    .contact div { color: white; text-align: center;
+    font-size: 2rem; padding: 2rem 0; }
+
     nav div { background: grey; padding: 1rem; }
 
 		section, footer  {
-			display: grid;
+		  display: grid;
 			grid-gap: 2rem;
 			margin: 1rem 0;
 		/*	max-width: 1000px;
@@ -80,13 +79,11 @@
     .fullwidth {
       grid-column: 1 / 9;
       align-self: center;
-      background: blue;
     }
 
     section.redistrictingnow h2 {
       grid-column: 1 / 5;
       align-self: center;
-      background: blue;
     }
 
     .leadintro {
@@ -104,7 +101,7 @@
       align-content: center;
     }
 
-    section>* { padding: 1rem; }
+    section>div, section>h2 { padding: 1rem; }
 
 		footer { grid-template-columns: 1fr 200px 200px 1fr;
 			grid-template-rows: 1fr 20px;
@@ -113,11 +110,13 @@
 		.stripe {
 				grid-column: 2 / 3;
         grid-row: 1 / 4;
-				background: blue;
 		}
 
-		div {  background: green; }
+    .balance-text {
+        text-wrap: balance;  /* Apply (proposed) CSS style */
+    }
 
+    div { background: rgba(0,0,0,.05); }
     </style>
 
 <!-- Google Analytics -->
@@ -130,19 +129,20 @@
       <nav>
         <div>RedrawRI is a campaign to reform how legislative districts are drawn in Rhode Island. Coalition partners include Common Cause Rhode Island, League of Women Voters of Rhode Island, NAACP Providence Branch, and others to be announced soon. Endorsers include Secretary of State Nellie Gorbea.</div>
         <div>
-          <div>Menu
+            <h6>Menu</h6>
             <ul>
-              <li>First</li>
-              <li>Second</li>
+              <li>How redistricting works now</li>
+              <li>Our proposal</li>
+              <li>Redistricting timeline</li>
+              <li>More you can do</li>
             </ul>
-          </div>
         </div>
       </nav>
     </header>
 
     <main>
-      <section class="onecolumn">
-        <div><img src="img/record.svg"></div>
+      <section class="fullwidth">
+        <img src="img/leadgraphic.gif">
       </section>
 
       <section class="leadtext">
@@ -150,11 +150,15 @@
           <p>When those in power draw districts, they do so to favor themselves and their political allies.</p>
 
           <p>At least 9 states now use an independent redistricting commission to draw state or federal maps.</p>
+          <ul>
+          <li><a href="#" class="action">See Virginia’s story</a></li>
+          <li><a href="#" class="action">See Michigan’s story</a></li>
+          </ul>
         </div>
         <div>
           <p>We are proposing Rhode Island create an independent commission to draw our federal and state congressional districts.
           </p>
-          <p>Read our proposal</p>
+          <p><a href="#" class="action">Read our proposal</a></p>
         </div>
       </section>
 
@@ -176,22 +180,22 @@
           <h4>District issues</h4>
           <ul class="flex">
               <li>
-                  <img src="img/record.svg">
+                  <img src="img/locater_map.png">
                   <h5>Not Compact</h5>
                   <p>Definition of not compact goes here and here</p>
               </li>
               <li>
-                  <img src="img/record.svg">
+                <img src="img/locater_map.png">
                   <h5>Breaks communities</h5>
                   <p>Definition of Breaks communities goes here and here</p>
               </li>
               <li>
-                  <img src="img/record.svg">
+                <img src="img/locater_map.png">
                   <h5>Favoring incumbents</h5>
                   <p>Definition of Favoring incumbents goes here and here</p>
               </li>
               <li>
-                  <img src="img/record.svg">
+                <img src="img/locater_map.png">
                   <h5>Equal population</h5>
                   <p>Definition of Equal population goes here and here</p>
               </li>
