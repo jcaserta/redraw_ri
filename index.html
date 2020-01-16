@@ -23,6 +23,7 @@
       flex-direction: row;
       align-items: flex-start;
       margin: 0 auto; padding: 0; padding-left: 1.8rem;
+      display:none; 
     }
     nav>div:nth-child(1)  {
       width: 50%;
@@ -99,7 +100,9 @@
       align-content: center;
     }
 
-    section>div, section>h2 { padding: 2rem; padding-bottom: 0; }
+    section>div, section>h2 { padding: 2rem; padding-right: 1rem; padding-bottom: 0; }
+
+    section.walltowall div { padding: 0; }
 
 		footer { grid-template-columns: 1fr 200px 200px 1fr;
 			grid-template-rows: 1fr 20px;
@@ -140,7 +143,7 @@
 
     <main>
       <section class="fullwidth">
-        <img src="img/leadgraphic.gif">
+        <img src="img/lead.png">
       </section>
 
       <section class="leadtext">
@@ -242,15 +245,11 @@
             </ol>
           </p>
         </div>
-        <div class="fullwidth">
-            <p>text</p>
-            <ul class="flex">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
-            <p>text</p>
-        </div>
+      </section>
+
+      <section class="walltowall">
+          <p>animated graphic goes here</p>
+<div style="padding:62.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/346123720?autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
       </section>
 
 
