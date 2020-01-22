@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+	<head>
+    <style>
+      body { margin: 0; font-size: 100px;}
+      .yel {
+				position: absolute;
+				top: 0; left: 0;
+				width: 100%;
+				height: 550px;
+			}
+			#myBtn h2 { clip-path: polygon(50% 85%, 60% 9%, 1% -80%, 59% 11%, 0 50%); background: blue;  transition: all 1s; color: white;
+				animation-name: example;
+			  animation-duration: 4s;
+				animation-delay: 0s;
+				animation-iteration-count: infinite;
+			  animation-direction: alternate;
+
+		 }
+			#myBtn h2:hover { clip-path: polygon(50% 50%, 60% 19%, 1% -80%, 99% 11%, 0 50%) }
+
+			@keyframes example {
+			  from {clip-path: polygon(50% 85%, 60% 9%, 1% -80%, 59% 11%, 0 50%);}
+			  to { clip-path: polygon(50% 50%, 60% 19%, 1% -80%, 99% 11%, 0 50%)}
+			}
+
+    </style>
+  </head>
+  <body>
+
+		<div  class="yel">
+			<h2>Fair maps, Fair Elections</h2>
+		</div>
+		<div id="myBtn" class="yel">
+			<h2>Fair maps, Fair Elections</h2>
+		</div>
+		<h1 id="head"></h1>
+  </body>
+	<!--
+	<script>
+
+		myVar = setInterval(insertWidth, 500);
+
+		function addP() {
+			const NEWDOM = document.querySelector("#myBtn");
+			const P = document.createElement("p");
+			P.append("waiting");
+			console.log(P)
+			NEWDOM.append(P);
+		}
+		addP();
+		function insertWidth() {
+			var width = window.innerWidth;
+			var height = window.innerHeight;
+			height>width ? console.log("window is taller") : console.log("window is wider");
+
+			document.querySelector("p").innerHTML = "width=" + width + "; height=" + height;
+
+			document.querySelector("div").style.width = width + "px";
+			document.getElementById("myBtn").style.height = height + "px";
+		}
+
+	</script>
+-->
+</html>
