@@ -13,7 +13,7 @@
     <style>
 
 		img { width: 100%; height: auto;  }
-		body { margin: 0 ; box-sizing: border-box; }
+		body { margin: 0 ; box-sizing: border-box; color: #280446}
 
 /* First section */
     nav  {
@@ -122,8 +122,10 @@
         height: 500px;
         display: flex;
         align-items: center;
-        justify-content: center;
-}
+      }
+
+      .main p { color: #280446; font-size: 20px; align-self: flex-end; padding:  10px 60px; z-index:100; }
+
     .h1 {
       position: absolute;
       width: 100%;
@@ -132,8 +134,8 @@
       justify-content: center;
       flex-wrap: wrap;
     }
-    h1 { font-weight: normal; text-align: center; font-size: 100px;
-      display: inline-block; padding: 34px; margin: -2px 0; color: #280446;
+    h1 { font-weight: normal; text-align: center; font-size: 120px;
+      display: inline-block; padding: 34px; margin: -1px 0; color: #280446;
 }
 
     .h1second h1 { clip-path: polygon(0% 0%, 1% 99%, 87% 100%, 98% 91%, 94% 75%, 69% 74%, 47% 58%, 32% 36%, 98% 24%, 61% 16%, 85% 1%);
@@ -144,8 +146,8 @@
       animation-iteration-count: infinite;
       animation-direction: alternate;
    }
-   .h1second h1:nth-child(even) { animation-duration: 11s; }
-     .h1second h1:nth-child(3n) { animation-duration: 18s; animation-delay: 1s;
+   .h1second h1:nth-child(3n) { animation-duration: 5s; }
+     .h1second h1:nth-child(2n) { animation-duration: 3s; animation-delay: 0;
 }
 
   .h1first h1 {				background: #B9FD5F;
@@ -181,11 +183,12 @@
 
     <main>
       <div class="main fullwidth">
+        <p>* Congressional Districts</p>
     		<div  class="h1first h1">
-    			<h1>Let’s</h1><h1>redraw</h1><h1>R.I.</h1><h1>districts</h1><h1>fairly</h1>
+    			<h1>Let’s</h1><h1>Redraw*</h1><h1>R.I.</h1>
     		</div>
     		<div class="h1second h1">
-    			<h1>Let’s</h1><h1>redraw</h1><h1>R.I.</h1><h1>districts</h1><h1>fairly</h1>
+          <h1>Let’s</h1><h1>Redraw*</h1><h1>R.I.</h1>
     		</div>
     	</div>
 
