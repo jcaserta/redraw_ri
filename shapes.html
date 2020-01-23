@@ -3,39 +3,61 @@
 	<head>
     <style>
       body { margin: 0; font-size: 100px;}
-      .yel {
+
+			.main {
+					background: ;
+					height: 350px;
+					position: relative;
+					display: flex;
+					align-items: center;
+				  justify-content: center;
+}
+      .h1 {
 				position: absolute;
 				top: 0; left: 0;
 				width: 100%;
-				height: 550px;
+				height: 130px;
+				display: flex;
+				align-items: center;
+			  justify-content: center;
+				flex-wrap: wrap;
 			}
-			#myBtn h2 { clip-path: polygon(50% 85%, 60% 9%, 1% -80%, 59% 11%, 0 50%); background: blue;  transition: all 1s; color: white;
+			h1 { font-weight: normal; text-align: center; font-family: Castledown; font-size: 100px;
+				display: inline-block; padding: 16px; margin: -2px; color: green;
+}
+
+			.h1second h1 { clip-path: polygon(0% 0%, 1% 99%, 87% 100%, 98% 91%, 94% 75%, 69% 74%, 47% 58%, 32% 36%, 98% 24%, 61% 16%, 85% 1%);
+				background: green;  transition: all 1s; color: white;
 				animation-name: example;
-			  animation-duration: 4s;
+			  animation-duration: 9s;
 				animation-delay: 0s;
 				animation-iteration-count: infinite;
 			  animation-direction: alternate;
-
 		 }
-			#myBtn h2:hover { clip-path: polygon(50% 50%, 60% 19%, 1% -80%, 99% 11%, 0 50%) }
+		 .h1second h1:nth-child(even) { animation-duration: 11s; }
+			 .h1second h1:nth-child(3n) { animation-duration: 18s; animation-delay: 1s;
+}
+
+ 		.h1first h1 {				background: cyan;
+}
 
 			@keyframes example {
-			  from {clip-path: polygon(50% 85%, 60% 9%, 1% -80%, 59% 11%, 0 50%);}
-			  to { clip-path: polygon(50% 50%, 60% 19%, 1% -80%, 99% 11%, 0 50%)}
+			  from {clip-path: polygon(0% 0%, 1% 99%, 87% 100%, 98% 91%, 94% 75%, 69% 74%, 47% 58%, 32% 36%, 98% 24%, 61% 16%, 85% 1%); }
+			  to { clip-path: polygon(0% 0%, 1% 99%, 64% 99%, 56% 89%, 62% 78%, 57% 71%, 60% 58%, 59% 41%, 60% 34%, 61% 16%, 67% 0);}
 			}
 
-			p { margin-top: 400px; z-index: -1; position: relative; background: yellow; width: 500px; height: 500px; clip-path: polygon(301px 76px, 75px 11px, 0px 130px, 91px 249px, 150px 304px, 374px 225px)}
 
     </style>
   </head>
   <body>
-
-		<div  class="yel">
-			<h2>Fair maps, Fair Elections</h2>
+	<section class="main">
+		<div  class="h1first h1">
+			<h1>Let’s</h1><h1>redraw</h1><h1>R.I.</h1><h1>districts</h1><h1>fairly</h1><h1>in</h1><h1>2021</h1>
 		</div>
-		<div id="myBtn" class="yel">
-			<h2>Fair maps, Fair Elections</h2>
+		<div class="h1second h1">
+			<h1>Let’s</h1><h1>redraw</h1><h1>R.I.</h1><h1>districts</h1><h1>fairly</h1><h1>in</h1><h1>2021</h1>
 		</div>
+	</section>
 		<p id="head"></p>
   </body>
 	<!--
