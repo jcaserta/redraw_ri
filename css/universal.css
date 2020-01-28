@@ -58,4 +58,4 @@ dark red (complements water blue): #8f2100;
     .leadintro p { font-size: 2vw; }
     .leadtext p, .leadtext ul { padding: 2rem; padding-right: 0rem; padding-top: 0rem; font-size: 1.8rem; }
     ul {  display: block;}
-    .action { font-size: 1.2rem; line-height: 140%; font-weight: bold; font-style: italic; color: violet; }
+    /* .action { font-size: 1.2rem; line-height: 140%; font-weight: bold; font-style: italic; color: violet; } */
