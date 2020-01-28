@@ -1,45 +1,15 @@
   html {     scroll-behavior: smooth; }
-
-  @font-face {
-    font-family: 'Riforma';
-    src:  url('fonts/RiformaLLWebTest-Regular.woff') format('woff'); /* Pretty Modern Browsers */
-    font-weight: normal;
-  }
 /*
       font-family: "Magmatic Ex Lt";
       font-family: "Magmatic Med";
+      font-family: "Magmatic Bd";
       font-family: "Magmatic Thi";
       font-family: "Magmatic Thi Wd";
       font-family: "Magmatic Ex Lt Wd";
       font-family: "Magmatic Med Wd";
+
+
 */
-
-  @font-face {
-    font-family: 'CooperHewitt';
-    src: url('fonts/CooperHewitt-Book.eot'); /* IE9 Compat Modes */
-    src: url('fonts/CooperHewitt-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/CooperHewitt-Book.woff') format('woff'), /* Pretty Modern Browsers */
-         url('fonts/CooperHewitt-Book.svg#svgFontName') format('svg'); /* Legacy iOS */
-    font-weight: normal;
-  }
-  @font-face {
-    font-family: 'CooperHewitt';
-    src: url('fonts/CooperHewitt-Bold.eot'); /* IE9 Compat Modes */
-    src: url('fonts/CooperHewitt-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/CooperHewitt-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-         url('fonts/CooperHewitt-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
-    font-weight: bold;
-  }
-  @font-face {
-    font-family: 'CooperHewitt';
-    src: url('fonts/CooperHewitt-BoldItalic.eot'); /* IE9 Compat Modes */
-    src: url('fonts/CooperHewitt-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/CooperHewitt-BoldItalic.woff') format('woff'), /* Pretty Modern Browsers */
-         url('fonts/CooperHewitt-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
-    font-weight: bold;
-    font-style: italic;
-  }
-
   body {
     color: #280446;
     line-height: 140%;
@@ -61,16 +31,29 @@
     section { grid-auto-flow: column; }
   }
 
+/*
+bright green: #7ec60c;
+medium green: #2d8000;
+dark green: #00571e;
+forest green: #355200;
+purple (complements green): #8f52ff;
+water blue: #8fe6ff;
+democracy blue: #0089fa; looks good on white
+dark blue: #002f5c;
+dark red (complements water blue): #8f2100;
 
-    h1 { font-size: 4rem; line-height: 4rem;   }
+*/
+    h1 { font-size: 4rem; line-height: 4rem;    }
     h2 { font-size: 3.7rem; line-height: 110%;   font-family: Magmatic Med; }
+    .kicker { font-family: Magmatic Thi; color: #0089fa; margin: 0 0 3rem 2rem; }
     h3 { font-size: 1.8rem; line-height: 2.2rem;   font-family: Magmatic Med;;
     margin-bottom: .4rem;  }
     h4 { font-size: 1.8rem; line-height: 2.2rem; color: #615d65;  font-weight: normal;  }
     h5 { font-size: 1.2rem; line-height: 1.6rem;  font-family: Magmatic Bd; color: #615d65; }
     h6 { font-size: 1rem; line-height: 1.6rem; display: block;  font-family: Magmatic Med; }
-    a { font-family: Magmatic Med; }
-    p { font-size: 1rem; line-height: 140%; }
+    a { color: #002f5c; font-family: "Magmatic Med"; text-decoration: none; border-bottom: 1px dotted #615d65; }
+    a:hover { border-bottom: 1px solid #002f5c; }
+    p { font-size: 1.2rem; line-height: 140%; }
     .agate { font-size: .9rem; }
     .leadintro p { font-size: 2vw; }
     .leadtext p, .leadtext ul { padding: 2rem; padding-right: 0rem; padding-top: 0rem; font-size: 1.8rem; }
