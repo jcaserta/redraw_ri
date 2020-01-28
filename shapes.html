@@ -60,10 +60,16 @@
 	</section>
 		<p id="head"></p>
   </body>
-	<!--
+
 	<script>
 
-		myVar = setInterval(insertWidth, 500);
+		//myVar = setInterval(insertWidth, 500);
+
+		function clickShape() {
+			console.log("clickr clicked");
+		}
+		var clickr = document.querySelector(".h1");
+		clickr.onclick = clickShape;
 
 		function addP() {
 			const NEWDOM = document.querySelector("#myBtn");
@@ -85,5 +91,5 @@
 		}
 
 	</script>
--->
+
 </html>

@@ -1,6 +1,20 @@
   html {     scroll-behavior: smooth; }
 
   @font-face {
+    font-family: 'Riforma';
+    src:  url('fonts/RiformaLLWebTest-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+    font-weight: normal;
+  }
+/*
+      font-family: "Magmatic Ex Lt";
+      font-family: "Magmatic Med";
+      font-family: "Magmatic Thi";
+      font-family: "Magmatic Thi Wd";
+      font-family: "Magmatic Ex Lt Wd";
+      font-family: "Magmatic Med Wd";
+*/
+
+  @font-face {
     font-family: 'CooperHewitt';
     src: url('fonts/CooperHewitt-Book.eot'); /* IE9 Compat Modes */
     src: url('fonts/CooperHewitt-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -27,13 +41,13 @@
   }
 
   body {
-    color: black;
+    color: #280446;
     line-height: 140%;
     margin: 0; padding: 0;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
     background: white;
-    font-family: "CooperHewitt";
+    font-family: "Magmatic Ex Lt";
   }
 
   .printonly, .onlyprint { display: none; }
@@ -48,13 +62,14 @@
   }
 
 
-    h1 { font-size: 4rem; line-height: 4rem;   font-weight: bold;}
-    h2 { font-size: 3.7rem; line-height: 110%;   font-weight: bold; }
-    h3 { font-size: 1.8rem; line-height: 2.2rem;   font-weight: bold;
+    h1 { font-size: 4rem; line-height: 4rem;   }
+    h2 { font-size: 3.7rem; line-height: 110%;   font-family: Magmatic Med; }
+    h3 { font-size: 1.8rem; line-height: 2.2rem;   font-family: Magmatic Med;;
     margin-bottom: .4rem;  }
-    h4 { font-size: 1.8rem; line-height: 2.2rem; color: #556;  font-weight: normal;  }
-    h5 { font-size: 1.2rem; line-height: 1.6rem;   font-weight: bold;  }
-    h6 { font-size: 1rem; line-height: 1.6rem; display: block;  font-weight: bold; }
+    h4 { font-size: 1.8rem; line-height: 2.2rem; color: #615d65;  font-weight: normal;  }
+    h5 { font-size: 1.2rem; line-height: 1.6rem;  font-family: Magmatic Bd; color: #615d65; }
+    h6 { font-size: 1rem; line-height: 1.6rem; display: block;  font-family: Magmatic Med; }
+    a { font-family: Magmatic Med; }
     p { font-size: 1rem; line-height: 140%; }
     .agate { font-size: .9rem; }
     .leadintro p { font-size: 2vw; }
