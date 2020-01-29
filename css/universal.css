@@ -44,7 +44,7 @@ dark red (complements water blue): #8f2100;
 
 */
     h1 { font-size: 4rem; line-height: 4rem;    }
-    h2 { font-size: 3.7rem; line-height: 110%;   font-family: Magmatic Med; }
+    h2 { font-size: 3.7rem; line-height: 110%;   font-family: Magmatic Med;   font-feature-settings: "ss02";}
     .kicker { font-family: Magmatic Thi; color: #0089fa; margin: 0 0 3rem 2rem; }
     h3 { font-size: 1.8rem; line-height: 2.2rem;   font-family: Magmatic Med;;
     margin-bottom: .4rem;  }
