@@ -24,7 +24,7 @@
       display: flex;
       flex-direction: row;
       align-items: flex-start;
-      margin: 0 auto; padding: 0; padding-left: 1.8rem;
+      margin: 0 auto; padding-top: .3rem; padding-left: 1.8rem;
     }
     nav>div:nth-child(1)  {
       width: 50%;
@@ -44,11 +44,11 @@
       margin-right: 1rem;
     }
 
-    .contact {  background: #00571e; }
+    .contact {  background: #2D721C; }
     .contact div { color: white; text-align: center;
     font-size: 2rem; padding: 2rem 0; }
 
-    nav div { padding: 1rem; }
+    nav div { padding: .8rem; }
 
 		section, footer  {
 		  display: grid;
@@ -119,17 +119,19 @@
 
     div {  }
 
-    .main {
-        background: #0089fa;
-        height: 500px;
+    .hero {
+      height: 500px;
         display: flex;
         align-items: center;
         font-family: "Magmatic Thi";
+        background: #8fe6ff;
       }
 
-      .main p { color: #280446; font-size: 2rem; align-self: flex-end; padding:  10px 60px; z-index:100; }
+      .hero p { color: #ccc; font-size: 2rem; align-self: flex-end; padding:  10px 60px; z-index:100; background: #2D721C; }
 
     .h1 {
+      height: 500px;
+      background: #8F52FF;
       position: absolute;
       width: 100%;
       display: flex;
@@ -138,24 +140,21 @@
       flex-wrap: wrap;
     }
 
-    h1 { font-weight: normal; text-align: center; font-size: 150px;
-      display: inline-block; padding: 44px; margin: -1px 0; color: #8f2100;
-}
-
-    .h1second h1 { clip-path: polygon(0% 0%, 1% 99%, 87% 100%, 98% 91%, 94% 75%, 69% 74%, 47% 58%, 32% 36%, 98% 24%, 61% 16%, 85% 1%);
-      background: #355200;  transition: all 1s; color: #000;
+    .h1second { clip-path: polygon(0% 0%, 1% 99%, 87% 100%, 98% 91%, 94% 75%, 69% 74%, 47% 58%, 32% 36%, 98% 24%, 61% 16%, 85% 1%);
+      background: #2D721C;   transition: all 1s;
       animation-name: example;
       animation-duration: 9s;
       animation-delay: 0s;
       animation-iteration-count: infinite;
       animation-direction: alternate;
    }
-   .h1second h1:nth-child(3n) { animation-duration: 5s; }
-     .h1second h1:nth-child(2n) { animation-duration: 3s; animation-delay: 0;
-}
 
-  .h1first h1 {				background: #8fe6ff;
-}
+    h1 { font-weight: normal; text-align: center; font-size: 150px;
+     display: inline-block; padding: 44px; margin: -1px 0;
+     line-height: 100%;
+    }
+    .h1second h1  { color: #fff; }
+    .h1first h1  { color: #000; }
 
     @keyframes example {
       from {clip-path: polygon(0% 0%, 1% 99%, 87% 100%, 98% 91%, 94% 75%, 69% 74%, 47% 58%, 32% 36%, 98% 24%, 61% 16%, 85% 1%); }
@@ -172,7 +171,7 @@
   <body>
     <header>
       <nav>
-        <div>Redraw RI is a campaign to reform how legislative districts are drawn in Rhode Island. <a href="#bottom">Who is behind it</a></div>
+        <div>Redraw RI is a campaign to reform how RI legislative districts are drawn. <a href="#bottom">Learn more</a></div>
         <div>
             <h6>&nbsp;</h6>
             <!--<ul>
@@ -186,13 +185,13 @@
     </header>
 
     <main>
-      <div class="main fullwidth">
+      <div class="hero fullwidth">
         <p>* Our state congressional districts fairly</p>
     		<div  class="h1first h1">
-    			<h1>Let’s</h1><h1>Redraw*</h1><h1>R.I!</h1>
+    			<h1>Let’s Redraw* R.I!</h1>
     		</div>
     		<div class="h1second h1">
-          <h1>Let’s</h1><h1>Redraw*</h1><h1>R.I!</h1>
+          <h1>Let’s Redraw* R.I!</h1>
     		</div>
     	</div>
 
