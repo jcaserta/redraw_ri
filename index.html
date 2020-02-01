@@ -63,7 +63,7 @@
 
     nav div { padding: .8rem; }
 
-    iframe { margin: 0 0 1rem 0; }
+    #rocco > div > div { margin: 0 0 1rem 0; }
 		section, footer  {
 		  display: grid;
       grid-row-gap: 0;
@@ -89,7 +89,9 @@
       grid-template-columns: repeat(8, 1fr);
       grid-template-rows: repeat(auto-fit, minmax(6rem, 1fr));
     }
-
+    .redistrictingnow ol {
+      margin-left: 2rem;
+    }
     .fullwidth {
       grid-column: 1 / 9;
       align-self: center;
@@ -105,7 +107,16 @@
     }
     .rightsupport {
       grid-column: 7 / 9;
+      margin-top: .5rem;
     }
+
+    .redistrictingnow .rightsupport {
+      grid-column: 6 / 9;
+    }
+    .redistrictingnow .leadintro {
+      grid-column: 2 / 6;
+    }
+
 
     section.dunno {
       grid-template-columns: 1fr 1fr;
@@ -115,11 +126,26 @@
       align-content: center;
     }
 
+
+    @media only screen and (max-width: 1024px) and (min-width: 900px){
+      .leadintro { grid-column: 2 / 8; }
+      .rightsupport { grid-column: 2 / 7; margin-bottom: 2rem;}
+      .rightsupport p { font-size: 1.8rem; }
+      ol { margin-left: 2rem; font-size: 1.3rem; line-height: 140%}
+    }
+
     @media only screen and (max-width: 900px) {
+      html { font-size: 14px; }
+      h1 { line-height: 90%; }
+      .leadintro>p { font-size: 2rem; }
+      ol  { font-size: 1.2rem; line-height: 140%; }
+      ol { margin-left: 3rem; }
+
       section  {
          display: block;
       }
     }
+
 
 
     section>div, section>h2 { padding: 2rem; padding-right: 1rem; padding-bottom: 0; }
@@ -163,7 +189,7 @@
     }
 
     .h1third {
-      background: #8fe6ff; 
+      background: #8fe6ff;
     }
     .h1first {
 
@@ -374,7 +400,7 @@
             <p><a href="#video">Watch the video below to see our plan</a></p>
         </div>
         <div class="rightsupport">
-          <h5>The Commission would use these criteria </h5>
+          <h5>The Commission would use these criteria</h5>
           <p>Listed in order of priority:</p>
             <ol>
               <li>Comply with the U.S. Constitution</li>
