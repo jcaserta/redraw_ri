@@ -60,4 +60,5 @@ dark red (complements water blue): #8f2100;
     .leadtext p, .leadtext ul { padding: 2rem; padding-right: 0rem; padding-top: 0rem; font-size: 1.8rem; }
     ul {  display: block;}
     ol li { list-style-type: decimal;}
+    strong { font-family: "Magmatic Med"; font-weight: normal; }
     /* .action { font-size: 1.2rem; line-height: 140%; font-weight: bold; font-style: italic; color: violet; } */
