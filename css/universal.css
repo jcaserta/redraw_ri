@@ -54,6 +54,7 @@ dark red (complements water blue): #8f2100;
     h6 { font-size: 1rem; line-height: 1.6rem; display: block;  font-family: Magmatic Med; }
     a { color: #002f5c; font-family: "Magmatic Med"; text-decoration: none; border-bottom: 1px dotted #615d65; }
     a:hover { border-bottom: 1px solid #002f5c; }
+    .contact a { color: #cfc; }
     p { font-size: 1.2rem; line-height: 140%; }
     .agate { font-size: .9rem; }
     .leadintro p { font-size: 2.3vw; margin-bottom: 1.5rem; }
