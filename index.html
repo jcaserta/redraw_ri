@@ -45,10 +45,16 @@
       justify-content: space-around;
       align-items: stretch;
       margin-bottom: 3rem;
+      flex-wrap: wrap;
     }
-    .flex li {
+    .flex div {
       flex: 1;
       margin-right: 3rem;
+      min-width: 300px;
+      margin-bottom: 2rem;
+    }
+    .flex div.nowrap {
+      flex-wrap: nowrap;
     }
 
     .contact {  background: #2D721C; }
@@ -74,6 +80,7 @@
       align-content: space-around;
       justify-content: space-between;
     }
+
 		section.leadtext {
 			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 		}
@@ -107,6 +114,13 @@
       align-items: center;
       align-content: center;
     }
+
+    @media only screen and (max-width: 900px) {
+      section  {
+         display: block;
+      }
+    }
+
 
     section>div, section>h2 { padding: 2rem; padding-right: 1rem; padding-bottom: 0; }
 
@@ -148,6 +162,9 @@
       flex-wrap: wrap;
     }
 
+    .h1third {
+      background: #8fe6ff; 
+    }
     .h1first {
 
       -webkit-clip-path: polygon(0 0, 0 100%, 91% 100%, 90% 93%, 89% 85%, 85% 81%, 83% 74%, 80% 65%, 80% 30%, 91% 30%, 93% 23%, 97% 13%, 92% 0);
@@ -167,11 +184,6 @@
 
       -webkit-clip-path: polygon(0% 84%, 31% 84%, 35% 69%, 35% 30%, 40% 30%, 48% 30%, 55% 30%, 59% 26%, 62% 23%, 68% 21%, 73% 26%, 75% 42%, 72% 55%, 68% 55%, 66% 73%, 60% 73%, 47% 73%, 39% 100%, 0 100%);
       clip-path: polygon(0% 84%, 31% 84%, 35% 69%, 35% 30%, 40% 30%, 48% 30%, 55% 30%, 59% 26%, 62% 23%, 68% 21%, 73% 26%, 75% 42%, 72% 55%, 68% 55%, 66% 73%, 60% 73%, 47% 73%, 39% 100%, 0 100%);
-
-
-
-
-
 
       background: #2D721C;   transition: all 1s;
       animation-name: green;
@@ -215,7 +227,7 @@
 
     }
 
-    @keyframes RRblue {
+    @keyframes blue {
       from {
         -webkit-clip-path: polygon(0 0, 0 100%, 89% 100%, 88% 91%, 87% 82%, 84% 71%, 83% 62%, 80% 57%, 80% 36%, 82% 25%, 85% 11%, 83% 0);
         clip-path: polygon(0 0, 0 100%, 89% 100%, 88% 91%, 87% 82%, 84% 71%, 83% 62%, 80% 57%, 80% 36%, 82% 25%, 85% 11%, 83% 0);
@@ -256,10 +268,13 @@
     <main>
       <div class="hero fullwidth">
         <p>* Our districts fairly</p>
+        <div class="h1third h1">
+          <h1>Let’s Redraw* RI!</h1>
+    		</div>
     		<div  class="h1first h1">
     			<h1>Let’s Redraw* RI!</h1>
     		</div>
-    		<div class="h1second h1">
+        <div class="h1second h1">
           <h1>Let’s Redraw* RI!</h1>
     		</div>
     	</div>
@@ -310,22 +325,22 @@
         <div class="fullwidth">
           <h3>Illustrating gerrymandering</h3>
           <h4>Current districts issues</h4>
-          <ul class="flex">
-              <li>
+          <div class="flex">
+              <div>
                   <img src="img/67.svg">
                   <h5>Qustionable contiguity</h5>
                   <p>One important principle is that districts must be contiguous — all of the land must be touching. With our unique coastline, sometimes map-makers have taken advantage by creating districts, such as House 67) that only connect by water. The boundary jumps over natural dividers to include non-contiguous parts of Barrington while putting part of Warren with Bristol in District 68 <a href="https://www.google.com/maps/d/u/0/viewer?mid=1eVtSpgi7lWe0AoKnaRrhqVKSjxI&ll=41.73724718813982%2C-71.29003622766538&z=13">See area in Google Maps</a>.</p>
-              </li>
-              <li>
+              </div>
+              <div>
                 <img src="img/35.svg">
                   <h5>Not compact</h5>
                   <p>The Rhode Island Constitution contains only two requirements for districts; <a href="http://webserver.rilin.state.ri.us/RiConstitution/C07.html">equal population and compactness</a>. Even then some districts defy reason. Current Senate District 35 (shown above in lime green) stretches from Warwick Showcase Cinemas down to Point Judith Lighthouse, 22 miles if driven on routes 4 and 1, both of which run through the district.  When seen <a href="https://www.google.com/maps/d/viewer?mid=1brpjZX1Luck4IwaiqplftQPfzBA&usp=sharing">on Google Maps,</a> it’s visible that the district approaches ½ the height of the state.</p>
-              </li>
-              <li>
+              </div>
+              <div>
                 <img src="img/locater_map.png">
                   <h5>Separating communities of interest</h5>
                   <p>One important principle we propose is requiring that map makers respect communities of interest. House 69 represents not maintaining communities of interest because it puts Prudence Island with a district composed primarily of Bristol, yet Prudence Island is part of the Portsmouth School District. <a href="https://www.google.com/maps/d/u/0/viewer?mid=1eVtSpgi7lWe0AoKnaRrhqVKSjxI&ll=41.629172609100735%2C-71.25759222742124&z=12">See area in Google Maps</a></p>
-              </li>
+              </div>
               <!--
               <li>
                 <img src="img/locater_map.png">
@@ -333,21 +348,20 @@
                   <p>Senate 6 was created to join the historically African-American neighborhood of Mt. Hope with a predominantly African-American section of South Providence</p>
               </li>
             -->
-          </ul>
-            <ul class="flex" id="rocco">
-                <li>
+          </div>
+            <div class="flex" id="rocco">
+                <div>
                   <h4>Rocco’s Robots</h4>
-<iframe src="https://player.vimeo.com/video/388578979?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                    <p>In 1981 Senate Majority Leader Rocco Quattrocchi (D-Providence) sought to punish both Republican stalwart Lila Sapinsley (R-Providence) and fellow Democratic “maverick” Senator Richard Licht (D-Providence) by combining their East Side districts. Bucking his party Licht joined Sapinsley in suing to overturn the new districts. When the three-judge panel of the federal court ruled to overturn the maps they wrote, “The only plausible explanation [for the maps are] to preserve the senatorial seats of incumbents favorable to the Democratic leadership and punish incumbents critical of the leadership.”</p>
-                </li>
-                <li>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/388578979?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>                    <p>In 1981 Senate Majority Leader Rocco Quattrocchi (D-Providence) sought to punish both Republican stalwart Lila Sapinsley (R-Providence) and fellow Democratic “maverick” Senator Richard Licht (D-Providence) by combining their East Side districts. Bucking his party Licht joined Sapinsley in suing to overturn the new districts. When the three-judge panel of the federal court ruled to overturn the maps they wrote, “The only plausible explanation [for the maps are] to preserve the senatorial seats of incumbents favorable to the Democratic leadership and punish incumbents critical of the leadership.”</p>
+</div>
+                <div>
                   <h4>Gerrymandering Burrillville</h4>
                     <img src="img/keable.gif">
                     <p>In 2010, Rep. Cale Keable (District 47 shown in light green above) won a seat in the Rhode Island House, beating opponent Republican Don Fox by 196 votes. The 2010 censis required that 350 people needed to shift out of District 47 to meet the equal population requirement. Instead, seemingly to help Keable maintain his seat, more than 1500 people were moved, including Don Fox, whose house <strong>(starred on map)</strong> was moved into District 48 representative by another Republican, Representative Brian Newberry. </p>
                     <p>
                   </p>
-                </li>
-              </ul>
+                </div>
+              </div>
         </div>
       </section>
 
