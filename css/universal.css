@@ -20,14 +20,6 @@
     font-family: "Magmatic Ex Lt";
   }
 
-  .printonly, .onlyprint { display: none; }
-  @media only print {
-    .noprint { display: none; }
-    .printonly, .onlyprint { display: block; }
-  }
-
-  @media only screen and (max-width: 970px) {
-  }
 
 /*
 bright green: #7ec60c;
@@ -42,7 +34,283 @@ dark red (complements water blue): #8f2100;
 
 */
 
-    h1 { font-size: 4rem; line-height: 4rem;    }
+
+		img { width: 100%; height: auto;  }
+		body { margin: 0 ; box-sizing: border-box;
+}
+
+/* First section */
+    nav  {
+      max-width: 1600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin: 0 auto; padding-top: .3rem; padding-left: 1.8rem;
+    }
+    nav>div:nth-child(1)  {
+      width: 50%;
+      font-size: 1.2rem;
+    }
+    nav>div:nth-child(2)  {
+      margin-left: auto;
+    }
+    nav a { white-space: nowrap; }
+
+    .flex {
+      grid-column: 1 / 9;
+      display: flex;
+      justify-content: space-around;
+      align-items: stretch;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+    .flex div {
+      flex: 1;
+      margin-right: 3rem;
+      min-width: 300px;
+      margin-bottom: 2rem;
+    }
+    .flex div.nowrap {
+      flex-wrap: nowrap;
+    }
+
+    .contact {  background: #2D721C; }
+    .contact div { color: white; text-align: center;
+    font-size: 2rem; padding: 2rem 0; }
+
+    nav div { padding: .8rem; }
+
+    #rocco > div > div { margin: 0 0 1rem 0; }
+		section, footer  {
+		  display: grid;
+      grid-row-gap: 0;
+      grid-column-gap: 2rem;
+			margin: 1rem auto;
+      max-width: 1600px;
+
+		/*	max-width: 1000px;
+			margin: 0 auto; /* there is no float center */
+		}
+
+    .onecolumn {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      align-content: space-around;
+      justify-content: space-between;
+    }
+
+		section.leadtext {
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		}
+
+    section.redistrictingnow {
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(auto-fit, minmax(6rem, 1fr));
+    }
+    .redistrictingnow ol {
+      margin-left: 2rem;
+    }
+    .fullwidth {
+      grid-column: 1 / 9;
+      align-self: center;
+    }
+
+    section.redistrictingnow h2 {
+      grid-column: 1 / 5;
+      align-self: center;
+    }
+
+    .leadintro {
+      grid-column: 2 / 7;
+    }
+    .rightsupport {
+      grid-column: 7 / 9;
+      margin-top: .5rem;
+    }
+
+    .redistrictingnow .rightsupport {
+      grid-column: 6 / 9;
+    }
+    .redistrictingnow .leadintro {
+      grid-column: 2 / 6;
+    }
+
+
+    section.dunno {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 200px;
+      justify-items: center; /* centers children within. width of child hugs content */
+      align-items: center;
+      align-content: center;
+    }
+
+
+    @media only screen and (max-width: 1024px) and (min-width: 900px){
+      .leadintro { grid-column: 2 / 8; }
+      .rightsupport { grid-column: 2 / 7; margin-bottom: 2rem;}
+      .rightsupport p { font-size: 1.8rem; }
+      ol { margin-left: 2rem; font-size: 1.3rem; line-height: 140%}
+    }
+
+    @media only screen and (max-width: 900px) {
+      html { font-size: 14px; }
+      h1 { line-height: 90%; }
+      .leadintro>p { font-size: 2rem; }
+      ol  { font-size: 1.2rem; line-height: 140%; }
+      ol { margin-left: 3rem; }
+      nav>div:nth-child(1)  {
+        width: 100%;
+        font-size: 1.2rem;
+      }
+      .hero p { padding: 1rem 4rem; }
+      section  {
+         display: block;
+      }
+    }
+
+
+
+    section>div, section>h2 { padding: 2rem; padding-right: 1rem; padding-bottom: 0; }
+
+    section.walltowall div { padding: 0; }
+
+		footer { grid-template-columns: 1fr 200px 200px 1fr;
+			grid-template-rows: 1fr 20px;
+		background: grey; }
+
+		.stripe {
+				grid-column: 2 / 3;
+        grid-row: 1 / 4;
+		}
+
+    .balance-text {
+         text-wrap: balance;  /* Apply (proposed) CSS style */
+     }
+
+    div {  }
+
+    .hero {
+      height: 500px;
+        display: flex;
+        align-items: center;
+        font-family: "Magmatic Thi";
+        background: #8fe6ff;
+      }
+
+    .hero p { color: #ccc; font-size: 2rem; align-self: flex-end; padding: 1.5rem 4rem; z-index:100;  }
+
+    .h1 {
+      height: 500px;
+      background: #8F52FF;
+      position: absolute;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .h1third {
+      background: #8fe6ff;
+    }
+    .h1first {
+
+      -webkit-clip-path: polygon(0 0, 0 100%, 91% 100%, 90% 93%, 89% 85%, 85% 81%, 83% 74%, 80% 65%, 80% 30%, 91% 30%, 93% 23%, 97% 13%, 92% 0);
+      clip-path: polygon(0 0, 0 100%, 91% 100%, 90% 93%, 89% 85%, 85% 81%, 83% 74%, 80% 65%, 80% 30%, 91% 30%, 93% 23%, 97% 13%, 92% 0);
+
+
+      background: #8F52FF;   transition: all 1s;
+      animation-name: blue;
+      animation-duration: 20s;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+   }
+
+
+    .h1second {
+
+      -webkit-clip-path: polygon(0% 84%, 31% 84%, 35% 69%, 35% 30%, 40% 30%, 48% 30%, 55% 30%, 59% 26%, 62% 23%, 68% 21%, 73% 26%, 75% 42%, 72% 55%, 68% 55%, 66% 73%, 60% 73%, 47% 73%, 39% 100%, 0 100%);
+      clip-path: polygon(0% 84%, 31% 84%, 35% 69%, 35% 30%, 40% 30%, 48% 30%, 55% 30%, 59% 26%, 62% 23%, 68% 21%, 73% 26%, 75% 42%, 72% 55%, 68% 55%, 66% 73%, 60% 73%, 47% 73%, 39% 100%, 0 100%);
+
+      background: #2D721C;   transition: all 1s;
+      animation-name: green;
+      animation-duration: 40s;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+   }
+
+    .h1second h1  { color: #fff; }
+    .h1first h1  { color: #000; }
+
+    @keyframes green {
+      0 {
+        -webkit-clip-path: polygon(0% 84%, 31% 84%, 35% 69%, 35% 30%, 40% 30%, 48% 30%, 55% 30%, 59% 26%, 62% 23%, 68% 21%, 73% 26%, 75% 42%, 72% 55%, 68% 55%, 66% 73%, 60% 73%, 47% 73%, 39% 100%, 0 100%);
+        clip-path: polygon(0% 84%, 31% 84%, 35% 69%, 35% 30%, 40% 30%, 48% 30%, 55% 30%, 59% 26%, 62% 23%, 68% 21%, 73% 26%, 75% 42%, 72% 55%, 68% 55%, 66% 73%, 60% 73%, 47% 73%, 39% 100%, 0 100%);
+
+      }
+      30% {
+        -webkit-clip-path: polygon(9% 15%, 0 12%, 0 0, 14% 0, 19% 14%, 25% 26%, 30% 34%, 40% 34%, 45% 62%, 52% 71%, 58% 84%, 69% 100%, 54% 100%, 41% 73%, 35% 65%, 29% 64%, 25% 50%, 22% 41%, 14% 25%);
+clip-path: polygon(9% 15%, 0 12%, 0 0, 14% 0, 19% 14%, 25% 26%, 30% 34%, 40% 34%, 45% 62%, 52% 71%, 58% 84%, 69% 100%, 54% 100%, 41% 73%, 35% 65%, 29% 64%, 25% 50%, 22% 41%, 14% 25%);
+
+
+      }
+      50% {
+        -webkit-clip-path: polygon(7% 17%, 0 12%, 0 0, 15% 0, 19% 14%, 27% 33%, 36% 20%, 48% 0, 62% 0, 74% 52%, 66% 100%, 54% 100%, 51% 84%, 41% 73%, 35% 65%, 29% 82%, 24% 82%, 15% 79%, 12% 27%);
+clip-path: polygon(7% 17%, 0 12%, 0 0, 15% 0, 19% 14%, 27% 33%, 36% 20%, 48% 0, 62% 0, 74% 52%, 66% 100%, 54% 100%, 51% 84%, 41% 73%, 35% 65%, 29% 82%, 24% 82%, 15% 79%, 12% 27%);
+
+
+      }
+      60% {
+        -webkit-clip-path: polygon(33% 91%, 32% 74%, 32% 66%, 30% 42%, 30% 17%, 33% 0, 50% 0, 57% 0, 62% 0, 77% 0, 83% 0, 88% 0, 92% 28%, 92% 72%, 90% 83%, 90% 90%, 90% 100%, 59% 100%, 32% 100%);
+        clip-path: polygon(33% 91%, 32% 74%, 32% 66%, 30% 42%, 30% 17%, 33% 0, 50% 0, 57% 0, 62% 0, 77% 0, 83% 0, 88% 0, 92% 28%, 92% 72%, 90% 83%, 90% 90%, 90% 100%, 59% 100%, 32% 100%);
+      }
+
+
+      }
+      100% {
+
+
+        -webkit-clip-path: polygon(9% 23%, 5% 31%, 3% 38%, 0 45%, 0 13%, 0 0, 72% 0, 82% 3%, 86% 11%, 88% 23%, 91% 39%, 91% 62%, 83% 71%, 72% 68%, 69% 36%, 66% 27%, 54% 16%, 23% 13%, 15% 21%);
+        clip-path: polygon(9% 23%, 5% 31%, 3% 38%, 0 45%, 0 13%, 0 0, 72% 0, 82% 3%, 86% 11%, 88% 23%, 91% 39%, 91% 62%, 83% 71%, 72% 68%, 69% 36%, 66% 27%, 54% 16%, 23% 13%, 15% 21%);
+
+      }
+    }
+
+  @keyframes contactback {
+    from {
+      -webkit-clip-path: polygon(0 0, 0 100%, 89% 100%, 88% 91%, 87% 82%, 84% 71%, 83% 62%, 80% 57%, 80% 36%, 82% 25%, 85% 11%, 83% 0);
+      clip-path: polygon(0 0, 0 100%, 89% 100%, 88% 91%, 87% 82%, 84% 71%, 83% 62%, 80% 57%, 80% 36%, 82% 25%, 85% 11%, 83% 0);
+
+    }
+    to {
+      -webkit-clip-path: polygon(0 0, 0 100%, 97% 100%, 97% 91%, 96% 85%, 96% 77%, 93% 66%, 93% 36%, 96% 25%, 94% 17%, 94% 8%, 92% 0);
+      clip-path: polygon(0 0, 0 100%, 97% 100%, 97% 91%, 96% 85%, 96% 77%, 93% 66%, 93% 36%, 96% 25%, 94% 17%, 94% 8%, 92% 0);
+    }
+}
+    @keyframes blue {
+      from {
+        -webkit-clip-path: polygon(0 0, 0 100%, 89% 100%, 88% 91%, 87% 82%, 84% 71%, 83% 62%, 80% 57%, 80% 36%, 82% 25%, 85% 11%, 83% 0);
+        clip-path: polygon(0 0, 0 100%, 89% 100%, 88% 91%, 87% 82%, 84% 71%, 83% 62%, 80% 57%, 80% 36%, 82% 25%, 85% 11%, 83% 0);
+
+      }
+      to {
+        -webkit-clip-path: polygon(0 0, 0 100%, 97% 100%, 97% 91%, 96% 85%, 96% 77%, 93% 66%, 93% 36%, 96% 25%, 94% 17%, 94% 8%, 92% 0);
+        clip-path: polygon(0 0, 0 100%, 97% 100%, 97% 91%, 96% 85%, 96% 77%, 93% 66%, 93% 36%, 96% 25%, 94% 17%, 94% 8%, 92% 0);
+
+
+      }
+    }
+
+
+
+
+
+    h1 { font-weight: normal; text-align: center; font-size: 9rem;
+     display: inline-block; padding: 44px; margin: -1px 0;
+     line-height: 100%;
+    }
     h2 { font-size: 4rem; line-height: 110%;   font-family: Magmatic Med;   font-feature-settings: "ss02";}
     .kicker { font-family: Magmatic Thi; font-size: 3.6rem; color: #0089fa; margin: 0 0 3rem 2rem; }
     h3 { font-size: 1.8rem; line-height: 2.2rem;   font-family: Magmatic Med;;
@@ -53,6 +321,14 @@ dark red (complements water blue): #8f2100;
     a { color: #002f5c; font-family: "Magmatic Med"; text-decoration: none; border-bottom: 1px dotted #615d65; }
     a:hover { border-bottom: 1px solid #002f5c; }
     .contact a { color: #cfc; }
+    .contact {
+      background: #8F52FF;   transition: all 1s;
+      animation-name: contactback;
+      animation-duration: 20s;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+}
     p { font-size: 1.2rem; line-height: 140%; }
     .agate { font-size: .9rem; }
     .leadintro p { font-size: 2.3vw; margin-bottom: 1.5rem; }
@@ -61,3 +337,23 @@ dark red (complements water blue): #8f2100;
     ol li { list-style-type: decimal;}
     strong { font-family: "Magmatic Med"; font-weight: normal; }
     /* .action { font-size: 1.2rem; line-height: 140%; font-weight: bold; font-style: italic; color: violet; } */
+
+    @media only screen and (max-width: 500px) {
+      h1 { font-size: 6rem; }
+      h2, .kicker { font-size: 2rem; margin: 0; }
+      h1 { line-height: 90%; }
+      .leadtext p, .leadtext ul { padding: 0; font-size: 1.5rem; }
+      .contact { margin-top: 2rem; font-size: 1rem;}
+      .contact div {  line-height: 100%; padding: 2rem; }
+      .leadintro>p { font-size: 1.5rem; }
+      .flex div { margin-right: 0; padding-right: 1rem; }
+      p { font-size: 1.2rem; line-height: 130%; }
+      ol  { font-size: 1.2rem; line-height: 140%; }
+      ol { margin-left: 3rem; }
+      nav { margin-bottom: 0;}
+      .hero p { padding: 1rem 2rem; }
+
+      section  {
+         display: block;
+      }
+    }
