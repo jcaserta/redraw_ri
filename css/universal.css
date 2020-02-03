@@ -93,12 +93,12 @@ dark red (complements water blue): #8f2100;
 		/*	max-width: 1000px;
 			margin: 0 auto; /* there is no float center */
 		}
-    footer { max-width: 100%; min-height: 50vh }
+    footer { max-width: 100%; }
     footer .flex { margin: 0 auto; align-items: center; }
-    footer img { width: 50%; mix-blend-mode: lighten;}
-    footer p { margin-bottom: 1rem; color: #7ec60c; }
-    footer div div:nth-of-type(1)  { text-align: center; }
-    footer div:nth-of-type(2) p:first-of-type { font-size: 1.8rem; }
+    footer img { width: 90px; mix-blend-mode: lighten; float: left;  margin-right: 3rem;  }
+    footer p { margin-bottom: 1rem; color: #8fe6ff; }
+  /*     footer div div:nth-of-type(1)  { text-align: center; }
+    /*    footer div:nth-of-type(2) p:first-of-type { font-size: 1.8rem; }
 
     /*
     bright green: #7ec60c;
@@ -195,9 +195,8 @@ dark red (complements water blue): #8f2100;
 
     section.walltowall div { padding: 0; }
 
-		footer { grid-template-columns: 1fr 200px 200px 1fr;
-			grid-template-rows: 1fr 20px;
-		background: #280446; padding-bottom: 2rem; color: white; margin-bottom: 0; }
+		footer { border-top: 1px solid #280446;
+		background: #280446; padding-bottom: 0; color: white; margin-bottom: 0; }
 /*
     bright green: #7ec60c;
     medium green: #2d8000;
@@ -375,7 +374,7 @@ clip-path: polygon(7% 17%, 0 12%, 0 0, 15% 0, 19% 14%, 27% 33%, 36% 20%, 48% 0, 
     h3 { font-size: 1.8rem; line-height: 2.2rem;   font-family: Magmatic Med;;
     margin-bottom: .4rem;  }
     h4 { font-size: 1.8rem; margin-bottom: .5rem; line-height: 2.2rem; color: #615d65;  font-weight: normal; font-feature-settings: "ss02"; }
-  h5 { font-size: 1.4rem; line-height: 1.8rem;  font-family: Magmatic Bd; color: #7ec60c; /* grey 615d65; */ }
+  h5 { font-size: 1.2rem; line-height: 1.7rem;  font-family: Magmatic Bd; color: #7ec60c; /* grey 615d65; */ }
     h6 { font-size: 1rem; line-height: 1.6rem; display: block;  font-family: Magmatic Med; }
     a { color: #002f5c; font-family: "Magmatic Med"; text-decoration: none; border-bottom: 1px dotted #615d65; }
     a.noborder { border-bottom: 0; }
