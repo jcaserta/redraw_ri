@@ -148,7 +148,7 @@ dark red (complements water blue): #8f2100;
     @media only screen and (max-width: 1024px) and (min-width: 900px){
       .leadintro { grid-column: 2 / 8; }
       .rightsupport { grid-column: 2 / 7; margin-bottom: 2rem;}
-      .rightsupport p { font-size: 1.8rem; }
+      .rightsupport p { font-size: 1.8rem; margin-bottom: 1rem;}
       ol { margin-left: 2rem; font-size: 1.3rem; line-height: 140%}
     }
 
@@ -197,7 +197,7 @@ dark red (complements water blue): #8f2100;
         background: #8fe6ff;
       }
 
-    .hero p { color: #ccc; font-size: 2.2rem; align-self: flex-end; padding: 1.5rem 4rem; z-index:100;  }
+    .hero p { color: #eee; font-size: 2.2rem; align-self: flex-end; padding: 1.5rem 4rem; z-index:100;  }
 
     .h1 {
       height: 500px;
@@ -346,6 +346,7 @@ clip-path: polygon(7% 17%, 0 12%, 0 0, 15% 0, 19% 14%, 27% 33%, 36% 20%, 48% 0, 
   h5 { font-size: 1.4rem; line-height: 1.8rem;  font-family: Magmatic Bd; color: #7ec60c; /* grey 615d65; */ }
     h6 { font-size: 1rem; line-height: 1.6rem; display: block;  font-family: Magmatic Med; }
     a { color: #002f5c; font-family: "Magmatic Med"; text-decoration: none; border-bottom: 1px dotted #615d65; }
+    #measuring p {  margin-bottom: .9rem;}
     a:hover { border-bottom: 1px solid #002f5c; }
     .contact a { color: #fff; }
     .contact {
@@ -358,7 +359,7 @@ clip-path: polygon(7% 17%, 0 12%, 0 0, 15% 0, 19% 14%, 27% 33%, 36% 20%, 48% 0, 
 }
     p { font-size: 1.2rem; line-height: 140%; }
     .agate { font-size: .9rem; }
-    .leadintro p { font-size: 2.3vw; margin-bottom: 1.5rem; }
+    .leadintro p { font-size: 2.3vw; margin-bottom: 1.4rem; }
     .leadtext p, .leadtext ul { padding: 2rem; padding-right: 0rem; padding-top: 0rem; font-size: 1.8rem; }
     ul {  display: block;}
     ol li { list-style-type: decimal;}
