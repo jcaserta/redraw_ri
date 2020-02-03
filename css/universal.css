@@ -163,20 +163,20 @@ dark red (complements water blue): #8f2100;
         font-size: 1.2rem;
       }
       .hero p { padding: 1rem 4rem; }
-      section  {
+      section, footer, .fullwidth  {
          display: block;
       }
     }
 
 
 
-    section>div, section>h2 { padding: 2rem; padding-right: 1rem; padding-bottom: 0; }
+    section>div, section>h2, footer div { padding: 2rem; padding-right: 1rem; padding-bottom: 0; }
 
     section.walltowall div { padding: 0; }
 
 		footer { grid-template-columns: 1fr 200px 200px 1fr;
 			grid-template-rows: 1fr 20px;
-		background: grey; }
+		background: black; padding-bottom: 2rem; color: white; margin-bottom: 0; }
 
 		.stripe {
 				grid-column: 2 / 3;
@@ -380,7 +380,4 @@ clip-path: polygon(7% 17%, 0 12%, 0 0, 15% 0, 19% 14%, 27% 33%, 36% 20%, 48% 0, 
       nav { margin-bottom: 0;}
       .hero p { padding: 1rem 2rem; }
 
-      section  {
-         display: block;
-      }
     }
