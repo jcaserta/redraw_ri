@@ -197,7 +197,7 @@ dark red (complements water blue): #8f2100;
         background: #8fe6ff;
       }
 
-    .hero p { color: #ccc; font-size: 2rem; align-self: flex-end; padding: 1.5rem 4rem; z-index:100;  }
+    .hero p { color: #ccc; font-size: 2.2rem; align-self: flex-end; padding: 1.5rem 4rem; z-index:100;  }
 
     .h1 {
       height: 500px;
@@ -347,9 +347,9 @@ clip-path: polygon(7% 17%, 0 12%, 0 0, 15% 0, 19% 14%, 27% 33%, 36% 20%, 48% 0, 
     h6 { font-size: 1rem; line-height: 1.6rem; display: block;  font-family: Magmatic Med; }
     a { color: #002f5c; font-family: "Magmatic Med"; text-decoration: none; border-bottom: 1px dotted #615d65; }
     a:hover { border-bottom: 1px solid #002f5c; }
-    .contact a { color: #cfc; }
+    .contact a { color: #fff; }
     .contact {
-      background: #8F52FF;   transition: all 1s;
+      background: #2d721c;   transition: all 1s;
       animation-name: contactback;
       animation-duration: 20s;
       animation-delay: 0s;
