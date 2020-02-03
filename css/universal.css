@@ -393,7 +393,7 @@ clip-path: polygon(7% 17%, 0 12%, 0 0, 15% 0, 19% 14%, 27% 33%, 36% 20%, 48% 0, 
 }
     p { font-size: 1.2rem; line-height: 140%; }
     .agate { font-size: .9rem; }
-    .leadintro p { font-size: 2.3vw; margin-bottom: 1.4rem; }
+    .leadintro p { font-size: 2.2vw; margin-bottom: 1.4rem; }
     .leadtext p, .leadtext ul { padding: 2rem; padding-right: 0rem; padding-top: 0rem; font-size: 1.8rem; }
     ul {  display: block;}
     ol li { list-style-type: decimal;}
@@ -418,4 +418,7 @@ clip-path: polygon(7% 17%, 0 12%, 0 0, 15% 0, 19% 14%, 27% 33%, 36% 20%, 48% 0, 
     }
     @media only screen and (min-width: 1210px) {
       .hero, .h1 { height: 70vh; }
+    }
+    @media only screen and (min-width: 1510px) {
+      .leadintro p { font-size: 34px; }
     }
