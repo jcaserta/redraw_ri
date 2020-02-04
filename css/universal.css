@@ -214,10 +214,6 @@ dark red (complements water blue): #8f2100;
         grid-row: 1 / 4;
 		}
 
-    .balance-text {
-         text-wrap: balance;  /* Apply (proposed) CSS style */
-     }
-
     div {  }
 
     .hero {
@@ -421,7 +417,7 @@ clip-path: polygon(84% 15%, 95% 26%, 95% 77%, 67% 84%, 60% 79%, 54% 85%, 50% 92%
     /* .action { font-size: 1.2rem; line-height: 140%; font-weight: bold; font-style: italic; color: violet; } */
 
     @media only screen and (max-width: 500px) {
-      h1 { font-size: 6.6rem; }
+      h1 { font-size: 5.8rem; }
       .hero p { font-size: 1.8rem; }
       h2, .kicker { font-size: 2rem; margin: 0; }
       h1 { line-height: 90%; }
