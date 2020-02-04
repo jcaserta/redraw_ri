@@ -425,7 +425,7 @@ clip-path: polygon(84% 15%, 95% 26%, 95% 77%, 67% 84%, 60% 79%, 54% 85%, 50% 92%
       .hero p { font-size: 1.8rem; }
       h2, .kicker { font-size: 2rem; margin: 0; }
       h1 { line-height: 90%; }
-      .leadtext p, .leadtext ul { padding: 0; font-size: 1.5rem; }
+      .leadtext p, .leadtext ul { padding: 0; padding-bottom: 1.5rem; font-size: 1.5rem; }
       .contact { margin-top: 2rem; font-size: 1rem;}
       .contact div {  line-height: 100%; padding: 2rem; }
       .leadintro>p { font-size: 1.5rem; }
@@ -435,6 +435,7 @@ clip-path: polygon(84% 15%, 95% 26%, 95% 77%, 67% 84%, 60% 79%, 54% 85%, 50% 92%
       ol { margin-left: 3rem; }
       nav { margin-bottom: 0;}
       .hero p { padding: 1rem 2rem; }
+      .timeline div { font-size: 1.5rem; }
 
     }
     @media only screen and (max-width: 800px) {
