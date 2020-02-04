@@ -391,7 +391,7 @@ clip-path: polygon(84% 15%, 95% 26%, 95% 77%, 67% 84%, 60% 79%, 54% 85%, 50% 92%
     .kicker { font-family: Magmatic Thi; font-size: 3.6rem; color: #0089fa; margin: 0 0 3rem 2rem; }
     h3 { font-size: 1.8rem; line-height: 2.2rem;   font-family: Magmatic Med;;
     margin-bottom: .4rem;  }
-    h4 { font-size: 1.8rem; margin-bottom: .5rem; line-height: 2.2rem; color: #615d65;  font-weight: normal; font-feature-settings: "ss02"; }
+    h4 { font-size: 1.8rem; margin-bottom: .5rem; line-height: 2.2rem; color: #615d65;  font-weight: normal;  }
   h5 { font-size: 1.2rem; line-height: 1.7rem;  font-family: Magmatic Bd; color: #7ec60c; /* grey 615d65; */ }
     h6 { font-size: 1rem; line-height: 1.6rem; display: block;  font-family: Magmatic Med; }
     a { color: #002f5c; font-family: "Magmatic Med"; text-decoration: none; border-bottom: 1px dotted #615d65; }
