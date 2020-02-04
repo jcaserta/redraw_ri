@@ -379,8 +379,10 @@ clip-path: polygon(84% 15%, 95% 26%, 95% 77%, 67% 84%, 60% 79%, 54% 85%, 50% 92%
   }
 
 
-
-
+.timeline div div { margin-left: 3vw; font-size: 2rem; line-height: 2.5rem; margin-top: 1.5rem; color: purple; }
+.timeline>div>div:first-child { margin-left: .15rem; }
+.timeline span { color: green; }
+.timeline { margin-bottom: 6rem; }
     h1 { font-weight: normal; text-align: center; font-size: 12vw;
      display: inline-block; padding: 44px; margin: -1px 0;
      line-height: 100%;
@@ -419,7 +421,8 @@ clip-path: polygon(84% 15%, 95% 26%, 95% 77%, 67% 84%, 60% 79%, 54% 85%, 50% 92%
     /* .action { font-size: 1.2rem; line-height: 140%; font-weight: bold; font-style: italic; color: violet; } */
 
     @media only screen and (max-width: 500px) {
-      h1 { font-size: 6rem; }
+      h1 { font-size: 8rem; }
+      .hero p { font-size: 1.8rem; }
       h2, .kicker { font-size: 2rem; margin: 0; }
       h1 { line-height: 90%; }
       .leadtext p, .leadtext ul { padding: 0; font-size: 1.5rem; }
