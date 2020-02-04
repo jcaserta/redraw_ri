@@ -157,7 +157,6 @@ dark red (complements water blue): #8f2100;
     @media only screen and (max-width: 1024px) and (min-width: 900px){
       .leadintro { grid-column: 2 / 8; }
       .rightsupport { grid-column: 2 / 7; margin-bottom: 2rem;}
-      .rightsupport p { font-size: 1.8rem; margin-bottom: 1rem;}
       ol { margin-left: 2rem; font-size: 1.3rem; line-height: 140%}
     }
 
@@ -382,7 +381,7 @@ justify-content: space-between; min-height: 20rem;}
 .timeline span { color: #2d8000; }
 .timeline { margin-bottom: 6rem; }
 .timeline .noborder { border: 0; padding: 0;  }
-.timeline .noborder h4 { color: #280446;}
+.timeline .noborder h4 { color: #280446; }
 .year { background: #2d8000; }
 .timeline a { border: 0; }
 .timeline a:hover {  border: 1px solid #2d8000;  }
@@ -457,6 +456,7 @@ dark red (complements water blue): #8f2100;
     }
     @media only screen and (max-width: 800px) {
       .hero, .h1 { height: 450px; }
+      h2 { font-size: 3rem; }
     }
     @media only screen and (min-width: 1210px) {
       .hero, .h1 { height: 40vw; }
