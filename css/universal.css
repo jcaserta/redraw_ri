@@ -78,7 +78,7 @@ dark red (complements water blue): #8f2100;
 
     .contact {  background: #2D721C; }
     .contact div { color: white; text-align: center;
-    font-size: 2rem; padding: 2rem 0; }
+    font-size: 1.8rem; padding: 1.8rem 0; }
 
     nav div { padding: .8rem; }
 
@@ -423,7 +423,7 @@ clip-path: polygon(84% 15%, 95% 26%, 95% 77%, 67% 84%, 60% 79%, 54% 85%, 50% 92%
       h1 { line-height: 90%; }
       .leadtext p, .leadtext ul { padding: 0; padding-bottom: 1.5rem; font-size: 1.5rem; }
       .contact { margin-top: 2rem; font-size: 1rem;}
-      .contact div {  line-height: 100%; padding: 2rem; }
+      .contact div {  line-height: 100%; padding: 1.5rem; }
       .leadintro>p { font-size: 1.5rem; }
       .flex div { margin-right: 0; padding-right: 1rem; }
       p { font-size: 1.2rem; line-height: 130%; }
