@@ -246,7 +246,7 @@ dark red (complements water blue): #8f2100;
       clip-path: polygon(0 0, 0 100%, 91% 100%, 90% 93%, 89% 85%, 85% 81%, 83% 74%, 80% 65%, 80% 30%, 91% 30%, 93% 23%, 97% 13%, 92% 0);
 
 
-      background: #8fe6ff;   transition: all 1s;
+      background: #8fe6ff;   transition: all .6s;
       animation-name: blue;
       animation-duration: 60s;
       animation-delay: 0s;
@@ -260,7 +260,7 @@ dark red (complements water blue): #8f2100;
       -webkit-clip-path: polygon(0 0, 0 100%, 22% 100%, 47% 100%, 45% 89%, 40% 87%, 38% 76%, 29% 74%, 22% 67%, 22% 49%, 24% 47%, 24% 33%, 30% 27%, 34% 29%, 37% 37%, 40% 39%, 39% 48%, 40% 63%, 44% 65%, 49% 67%, 50% 53%, 48% 40%, 47% 32%, 48% 25%, 43% 19%, 48% 13%, 52% 9%, 51% 0);
       clip-path: polygon(0 0, 0 100%, 22% 100%, 47% 100%, 45% 89%, 40% 87%, 38% 76%, 29% 74%, 22% 67%, 22% 49%, 24% 47%, 24% 33%, 30% 27%, 34% 29%, 37% 37%, 40% 39%, 39% 48%, 40% 63%, 44% 65%, 49% 67%, 50% 53%, 48% 40%, 47% 32%, 48% 25%, 43% 19%, 48% 13%, 52% 9%, 51% 0);
 
-      background: #2D721C;   transition: all 1s;
+      background: #2D721C;   transition: all .6s;
       animation-name: green;
       animation-duration: 50s;
       animation-delay: 0s;
