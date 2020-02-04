@@ -97,21 +97,7 @@ dark red (complements water blue): #8f2100;
     footer .flex { margin: 0 auto; align-items: center; }
     footer img { width: 90px; mix-blend-mode: lighten; float: left;  margin-right: 3rem;  }
     footer p { margin-bottom: 1rem; color: #8fe6ff; }
-  /*     footer div div:nth-of-type(1)  { text-align: center; }
-    /*    footer div:nth-of-type(2) p:first-of-type { font-size: 1.8rem; }
 
-    /*
-    bright green: #7ec60c;
-    medium green: #2d8000;
-    dark green: #00571e;
-    forest green: #355200;
-    purple (complements green): #8f52ff;
-    water blue: #8fe6ff;
-    democracy blue: #0089fa; looks good on white
-    dark blue: #002f5c;
-    dark red (complements water blue): #8f2100;
-
-    */
 
     .onecolumn {
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -127,6 +113,8 @@ dark red (complements water blue): #8f2100;
       grid-template-columns: repeat(8, 1fr);
       grid-template-rows: repeat(auto-fit, minmax(6rem, 1fr));
     }
+
+    .timeline { margin-top: 4rem; }
     .redistrictingnow ol {
       margin-left: 2rem;
     }
@@ -375,10 +363,43 @@ clip-path: polygon(84% 15%, 95% 26%, 95% 77%, 67% 84%, 60% 79%, 54% 85%, 50% 92%
   }
 
 
-.timeline div div { margin-left: 3vw; font-size: 2rem; line-height: 2.5rem; margin-top: 1.5rem; color: purple; }
-.timeline>div>div:first-child { margin-left: .15rem; }
-.timeline span { color: green; }
+.timeline>div {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: -2rem;
+  margin-left: -1rem;
+}
+.timeline div div { flex: 1;  min-width: 200px; margin-left: 1rem; font-size: 1.8rem; line-height: 110%; margin-top: 1rem; color: #0089fa; border: 1px solid #7ec60c; border-top: 3px solid #2d8000; padding: 2rem; display: flex; flex-direction: column;
+justify-content: space-between; min-height: 20rem;}
+
+.timeline div div.double { min-width: 400px; }
+
+.timeline img {
+}
+.timeline h5 { color: #2d8000; font-size: 1.8rem; line-height: 110%; font-family: "Magmatic Ex Lt"; font-weight: normal; }
+.year h5 { color: #7ec60c; font-size: 200%; font-family: "Magmatic Thi"; }
+.timeline h6 { font-size: 1.8rem; line-height: 110%; font-family: "Magmatic Ex Lt"; font-weight: normal; }
+.timeline span { color: #2d8000; }
 .timeline { margin-bottom: 6rem; }
+.timeline .noborder { border: 0; padding: 0;  }
+.timeline .noborder h4 { color: #280446;}
+.year { background: #2d8000; }
+.timeline a { border: 0; }
+.timeline a:hover {  border: 1px solid #2d8000;  }
+
+/*
+bright green: #7ec60c;
+medium green: #2d8000;
+dark green: #00571e;
+forest green: #355200;
+purple (complements green): #8f52ff;
+water blue: #8fe6ff;
+democracy blue: #0089fa; looks good on white
+dark blue: #002f5c;
+dark red (complements water blue): #8f2100;
+
+*/
+
     h1 { font-weight: normal; text-align: center; font-size: 11vw;
      display: inline-block; padding: 44px; margin: -1px 0;
      line-height: 100%;
