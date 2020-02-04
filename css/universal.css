@@ -379,7 +379,7 @@ clip-path: polygon(84% 15%, 95% 26%, 95% 77%, 67% 84%, 60% 79%, 54% 85%, 50% 92%
 .timeline>div>div:first-child { margin-left: .15rem; }
 .timeline span { color: green; }
 .timeline { margin-bottom: 6rem; }
-    h1 { font-weight: normal; text-align: center; font-size: 12vw;
+    h1 { font-weight: normal; text-align: center; font-size: 11vw;
      display: inline-block; padding: 44px; margin: -1px 0;
      line-height: 100%;
     }
@@ -439,8 +439,8 @@ clip-path: polygon(84% 15%, 95% 26%, 95% 77%, 67% 84%, 60% 79%, 54% 85%, 50% 92%
     }
     @media only screen and (min-width: 1210px) {
       .hero, .h1 { height: 40vw; }
-      h1 { font-size: 8.5rem; }
     }
-    @media only screen and (min-width: 1510px) {
-      .leadintro p { font-size: 34px; }
+    @media only screen and (min-width: 1410px) {
+      .leadintro p { font-size: 32px; }
+      h1 { font-size: 9.8rem; }
     }
