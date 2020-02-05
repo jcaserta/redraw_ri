@@ -178,7 +178,7 @@ dark red (complements water blue): #8f2100;
 
 
 
-    section>div, section>h2, footer>div { padding: 2rem; padding-right: 1rem; padding-bottom: 0; }
+    section>div, section>h2, footer>div { padding: 2rem; padding-right: 1.5rem; padding-bottom: 0; }
 
     section.walltowall div { padding: 0; }
 
@@ -236,7 +236,7 @@ dark red (complements water blue): #8f2100;
 
       background: #8fe6ff;   transition: all .6s;
       animation-name: blue;
-      animation-duration: 40s;
+      animation-duration: 60s;
       animation-delay: 0s;
       animation-iteration-count: infinite;
       animation-direction: alternate;
@@ -250,7 +250,7 @@ dark red (complements water blue): #8f2100;
 
       background: #2D721C;   transition: all .6s;
       animation-name: green;
-      animation-duration: 40s;
+      animation-duration: 60s;
       animation-delay: 0s;
       animation-iteration-count: infinite;
       animation-direction: alternate;
@@ -370,7 +370,7 @@ clip-path: polygon(14% 0, 24% 0, 24% 9%, 26% 16%, 28% 25%, 30% 34%, 36% 40%, 36%
   padding-left: -2rem;
   margin-left: -1rem;
 }
-.timeline div div { flex: 1;  min-width: 200px; margin-left: 1rem; font-size: 1.8rem; line-height: 110%; margin-top: 1rem; color: #0089fa; border: 1px solid #7ec60c; border-top: 3px solid #2d8000; padding: 2rem; display: flex; flex-direction: column; justify-content: space-between; min-height: 20rem;}
+.timeline div div { flex: 1;  min-width: 200px; margin-left: 1rem; font-size: 1.8rem; line-height: 110%; margin-top: 1rem; color: #8f52ff; border: 1px solid #7ec60c; border-top: 3px solid #2d8000; padding: 2rem; display: flex; flex-direction: column; justify-content: space-between; min-height: 20rem;}
 
 .timeline div div.double { min-width: 400px; }
 
