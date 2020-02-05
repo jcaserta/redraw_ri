@@ -256,7 +256,7 @@ dark red (complements water blue): #8f2100;
       animation-direction: alternate;
    }
 
-    .h1third h1  { color: #280446; }
+    .h1third h1  { color: #2e0c4c; }
     .h1second h1  { color: #fff; }
     .h1first h1  { color: #000; }
 
@@ -403,7 +403,7 @@ dark red (complements water blue): #8f2100;
 
     h1 { font-weight: normal; text-align: center; font-size: 11vw;
      display: inline-block; padding: 44px; margin: -1px 0;
-     line-height: 100%; 
+     line-height: 100%;
 
     }
     h2 { text-rendering: optimizeLegibility;
