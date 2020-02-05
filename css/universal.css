@@ -456,7 +456,7 @@ font-size: 4rem; line-height: 110%;   font-family: Magmatic Med;   font-feature-
       nav { margin-bottom: 0;}
       .hero p { padding: 1rem 2rem; }
       .timeline h5, .timeline h6 { font-size: 1.4rem; }
-      .timeline div div { min-height: 10rem; }
+      .timeline div div { min-height: 0; }
       .timeline div div.year { display: none; }
 
 
