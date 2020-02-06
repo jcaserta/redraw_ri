@@ -256,7 +256,7 @@ dark red (complements water blue): #8f2100;
       animation-direction: alternate;
    }
 
-    .h1third h1  { color: #2e0c4c; }
+    .h1third h1  { color: #380e5d; }
     .h1second h1  { color: #fff; }
     .h1first h1  { color: #000; }
 
@@ -432,7 +432,7 @@ font-size: 4rem; line-height: 110%;   font-family: Magmatic Med;   font-feature-
       background: #00571e;
     }
     p { font-size: 1.2rem; line-height: 140%; }
-    .agate { font-size: .9rem; }
+    .agate { font-size: .9rem;  }
     .leadintro p { font-size: 2.2vw; margin-bottom: 1.4rem; }
     .leadtext p, .leadtext ul { padding: 2rem; padding-right: 0rem; padding-top: 0rem; font-size: 1.8rem; }
     ul {  display: block;}

@@ -25,14 +25,13 @@
     <link href="//cloud.typenetwork.com/projects/3470/fontface.css/" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/universal.css" />
     <script src="balancetext.min.js"></script>
-    <script type="text/javascript">
+    <script>
       balanceText();
     </script>
-
-    <style>
-        .balance-text {
-             text-wrap: balance;  /* Apply (proposed) CSS style */
-         }
+    <style type="text/css">
+    .balance-text {
+    	text-wrap: balanced;
+    }
     </style>
 
 <!-- Google Analytics -->
@@ -140,7 +139,7 @@
                 <div id="burrillville">
                   <h4>Gerrymandering Burrillville</h4>
                     <img src="img/burrillville.gif">
-                    <p>In 2010, Rep. Cale Keable (District 47 shown in light green above) won a seat in the Rhode Island House, beating opponent Republican Don Fox by 196 votes. The 2010 censis required that 350 people needed to shift out of District 47 to meet the equal population requirement. Instead, seemingly to help Keable maintain his seat, more than 1500 people were moved, including Don Fox, whose house <strong>(starred on map)</strong> was moved into District 48 representative by another Republican, Representative Brian Newberry. </p>
+                    <p>In 2010, Rep. Cale Keable (District 47 shown in light green above) won a seat in the Rhode Island House, beating opponent Republican Don Fox by 196 votes. The 2010 censis required that 350 people needed to shift out of District 47 to meet the equal population requirement. Instead, seemingly to help Keable maintain his seat, more than 1500 people were moved, including Don Fox, whose house <strong>(starred on map)</strong> was moved into District 48 by another Republican, Representative Brian Newberry. </p>
                     <p class="agate"><a title="Post to twitter" href="https://twitter.com/intent/tweet?text=See how Don Fox was gerrymandered out of his district' on redrawri.org @commoncauseri https://redrawri.org#burrillville">Share on twitter</a><p>
 
                 </div>
@@ -179,7 +178,6 @@
 
       <section class="redistrictingnow timeline">
         <h2 class="balance-text">Redistricting timeline</h2>
-      </div>
           <div class="fullwidth">
             <div class="noborder">
                   <h4>Key dates to keep an eye on as the amendment unfolds</h4>
@@ -288,15 +286,22 @@
       <div class="flex">
         <div><a href="https://www.commoncause.org/rhode-island/" target="_blank" class="noborder"><img src="img/CCRIblack3.png"></a>
           <p>RedrawRI is a campaign to reform how legislative districts are drawn in Rhode Island. It is a collaboration of community groups (NAACP, League of Women Voters and Common Cause RI) focused on better democratic practices. If you have time, <a href="https://www.commoncause.org/rhode-island/" target="_blank">join the mailing list</a> to stay up-to-date. If you have money, <a href="https://actionnetwork.org/fundraising/common-cause-rhode-island?_ga=2.50518444.44753915.1580754735-1887334241.1579113336" target=_blank>donate</a> to the cause.</p>
-          <p class="agate">Website created by <a href="http://johncaserta.com">John Caserta</a> at <a href="http://thedesignoffice.org">The Design Office</a>. Independent commission animation created by Elliot Keeler.
+          <p class="agate">Website created by <a href="http://johncaserta.com"  target=_blank>John Caserta</a> at <a href="http://thedesignoffice.org"  target=_blank>The Design Office</a>. Independent commission animation created by Elliot Keeler. The typeface is Magmatic, donated by <a href="https://occupantfonts.com/"  target=_blank>Occupant Fonts</a>.
         </div>
 
 
 
         </div>
     </footer>
-
-
+    <script>
+      function setAll(text) {
+      var h = document.querySelectorAll("h1");
+      var i = h.length;
+        while (i--) {
+          h[i].innerHTML = text;
+        }
+      }
+      setAll("Let’s Redraw* RI!");
+    </script>
   </body>
-
 </html>
