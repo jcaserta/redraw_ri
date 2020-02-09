@@ -96,7 +96,7 @@ dark red (complements water blue): #8f2100;
 		}
     footer { max-width: 100%; }
     footer .flex { margin: 0 auto; align-items: center; }
-    footer img { width: 90px; mix-blend-mode: lighten; float: left;  margin-right: 3rem;  }
+    footer img { width: 90px; mix-blend-mode: lighten; float: right;  margin: 0 3rem 2rem 7rem;  }
     footer p { margin-bottom: 1rem; color: #8fe6ff; }
 
 
